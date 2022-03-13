@@ -22,7 +22,7 @@ def speak(audio):
 
 
 def wishMe():
-    speak("Welcome back sir")
+    speak("Welcome back ubaida saood")
     hour = int(datetime.datetime.now().hour)
     print(hour)
     year = int(datetime.datetime.now().year)
@@ -169,7 +169,7 @@ if __name__ == "__main__":
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "ReciversEmail@gmail.com"    
+                to = "ubaidasaood1997@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
