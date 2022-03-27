@@ -40,16 +40,16 @@ def wishMe():
     speak(month)
     speak(year)
     if hour>=6 and hour<12:
-        speak("Good Morning AK47!")
+        speak("Good Morning saood")
 
     elif hour>=12 and hour<18:
-        speak("Good Afternoon AK47!")
+        speak("Good Afternoon saood")
 
     elif hour>=18 and hour<24:
-        speak("Good Evening AK47!")
+        speak("Good Evening saood")
 
     else:
-        speak("Good Night AK47!")
+        speak("Good Night saood")
 
     speak("Jarvis at your Service. Please tell me how can I help You ")
 #wishMe()
@@ -82,13 +82,13 @@ def sendEmail(to, content):
     server.sendmail('Senderemail@gmail.com', to, content)
     server.close()
 
-def lighton():
+def lighton():  #ignore this one
     driver = webdriver.Chrome('C:/Users/Username/Downloads/chromedriver.exe') #add the location of the chrome Drivers
     driver.get("https://Add here.000webhostapp.com/main.html") #Add the webhost name
     elem1 = driver.find_element_by_id("S1off")
     elem1.click()
 
-def lightoff():
+def lightoff():   #ignore this one
     driver = webdriver.Chrome('C:/Users/HACKER47/Downloads/chromedriver.exe')
     driver.get("https://Add here.000webhostapp.com/main.html") #Add the webhost name
     elem1 = driver.find_element_by_id("S1on")
@@ -185,12 +185,12 @@ if __name__ == "__main__":
             os.system('explorer C://{}'.format(query.replace('Open','')))
 
         
-        elif 'turn on lights' in query:
+        elif 'turn on lights' in query:      # ignore this elif statement
             speak("OK,sir turning on the Lights")
             lighton()
             speak("Lights are on")
         
-        elif 'turn off lights' in query:
+        elif 'turn off lights' in query:     # ignore this elif statement
             speak("OK,sir turning off the Lights")
             lightoff()
             speak("Lights are off")
